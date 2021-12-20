@@ -1,4 +1,4 @@
-package com.example.wallstate
+package dev.codersangam.wallstate
 
 import io.flutter.embedding.android.FlutterActivity
 
