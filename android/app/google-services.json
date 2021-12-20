@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "809191827242",
+    "project_id": "wallstate-24f69",
+    "storage_bucket": "wallstate-24f69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809191827242:android:1160739607e5b9ca7fa053",
+        "android_client_info": {
+          "package_name": "dev.codersangam.wallstate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809191827242-n7647h9t30aba03eefu5tn1jfue55dr8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.codersangam.wallstate",
+            "certificate_hash": "977fc9b17821f922ad512bd9e37239855ae88264"
+          }
+        },
+        {
+          "client_id": "809191827242-vr6rl77tsdbfualgjrtn0um65i4ck1nb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI9WJa86AXyoifygco60Ut7Ck-jDKPgbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809191827242-vr6rl77tsdbfualgjrtn0um65i4ck1nb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
