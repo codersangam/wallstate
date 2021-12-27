@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wallstate/providers/user_provider.dart';
-import 'package:wallstate/screens/login_screen.dart';
+import 'package:wallstate/providers/wallpaper_provider.dart';
+import 'package:wallstate/screens/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
@@ -21,13 +22,16 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<UserProvider>(
           create: (context) => UserProvider(),
         ),
+        ChangeNotifierProvider<WallPaperProvider>(
+          create: (context) => WallPaperProvider(),
+        ),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const LoginScreen(),
+        home: const HomeScreen(),
       ),
     );
   }
