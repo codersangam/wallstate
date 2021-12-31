@@ -3,6 +3,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:provider/provider.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:wallstate/providers/wallpaper_provider.dart';
+import 'package:wallstate/screens/details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -30,13 +31,24 @@ class _HomeScreenState extends State<HomeScreen> {
             elevation: 8.0,
             borderRadius: const BorderRadius.all(Radius.circular(10)),
             child: InkWell(
-              onTap: () {},
-              child: FadeInImage(
-                fit: BoxFit.cover,
-                image: NetworkImage(
-                  data.imageUrl.toString(),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        DetailsScreen(data: data.imageUrl.toString()),
+                  ),
+                );
+              },
+              child: Hero(
+                tag: data,
+                child: FadeInImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage(
+                    data.imageUrl.toString(),
+                  ),
+                  placeholder: const AssetImage('assets/images/Wlstate.jpg'),
                 ),
-                placeholder: const AssetImage('assets/images/Wlstate.jpg'),
               ),
             ),
           );
